@@ -5,16 +5,16 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 @Component({
   selector: 'app-editar-empleados',
   templateUrl: './edit-employees.component.html',
-  styleUrls: ['./adit-employees.component.css']
+  styleUrls: ['./edit-employees.component.css']
 })
-export class AditEmployeesComponent implements OnInit {
+export class EditEmployeesComponent implements OnInit {
 
   public id: string;
   public errors: any;
   usuario: any;
   str: string;
 
-  formulario = {
+  form = {
     id: '',
     nombre: '',
     lugNac: '',
@@ -34,14 +34,14 @@ export class AditEmployeesComponent implements OnInit {
   editEmployee(){
     let url = 'http://localhost:8071/updateData/';
     let content = ({
-      id: this.formulario.id,
+      id: this.form.id,
       data: {
-          nombre: this.formulario.nombre,
-          aPaterno: this.formulario.lugNac,
-          aMaterno: this.formulario.fecNac,
-          email: this.formulario.telefono,
-          cargo: this.formulario.cargo,
-          estado: this.formulario.estado
+          nombre: this.form.nombre,
+          aPaterno: this.form.lugNac,
+          aMaterno: this.form.fecNac,
+          email: this.form.telefono,
+          cargo: this.form.cargo,
+          estado: this.form.estado
     }
 });
     this.http.put(url, content, { headers: new HttpHeaders({'content-Type': 'application/json', })})
@@ -68,13 +68,13 @@ export class AditEmployeesComponent implements OnInit {
     .subscribe( resultado => {
       this.usuario = resultado;
       // console.log(this.usuario);
-      this.formulario.id = this.usuario.id;
-      this.formulario.nombre = this.usuario.data.nombre;
-      this.formulario.lugNac = this.usuario.data.lugNac;
-      this.formulario.fecNac = this.usuario.data.fecNac;
-      this.formulario.telefono = this.usuario.data.telefono;
-      this.formulario.cargo = this.usuario.data.cargo;
-      this.formulario.estado = this.usuario.data.estado;
+      this.form.id = this.usuario.id;
+      this.form.nombre = this.usuario.data.nombre;
+      this.form.lugNac = this.usuario.data.lugNac;
+      this.form.fecNac = this.usuario.data.fecNac;
+      this.form.telefono = this.usuario.data.telefono;
+      this.form.cargo = this.usuario.data.cargo;
+      this.form.estado = this.usuario.data.estado;
     });
   }
 }

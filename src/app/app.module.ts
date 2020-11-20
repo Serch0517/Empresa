@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ListEmployeesComponent } from './lista-employees/list-employees.component';
 import { AddEmployeesComponent } from './add-employees/add-employees.component';
-import { AditEmployeesComponent } from './edit-employees/adit-employees.component';
+import { EditEmployeesComponent } from './edit-employees/edit-employees.component';
 import { RouteModule } from './route/route.module';
 
 
@@ -20,7 +20,7 @@ import { RouteModule } from './route/route.module';
     NavigationComponent,
     ListEmployeesComponent,
     AddEmployeesComponent,
-    AditEmployeesComponent
+    EditEmployeesComponent
   ],
   imports: [
     BrowserModule,
