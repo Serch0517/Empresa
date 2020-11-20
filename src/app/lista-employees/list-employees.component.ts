@@ -6,10 +6,10 @@ import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-lista-empleados',
-  templateUrl: './lista-empleados.component.html',
-  styleUrls: ['./lista-empleados.component.css']
+  templateUrl: './list-employees.component.html',
+  styleUrls: ['./list-employees.component.css']
 })
-export class ListaEmpleadosComponent implements OnInit {
+export class ListEmployeesComponent implements OnInit {
 
   public tempResult: any = [];
   public tabla = true;

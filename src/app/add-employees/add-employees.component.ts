@@ -5,10 +5,10 @@ import {Router } from '@angular/router';
 
 @Component({
   selector: 'app-agrega-empleados',
-  templateUrl: './agrega-empleados.component.html',
-  styleUrls: ['./agrega-empleados.component.css']
+  templateUrl: './add-employees.component.html',
+  styleUrls: ['./add-employees.component.css']
 })
-export class AgregaEmpleadosComponent implements OnInit {
+export class AddEmployeesComponent implements OnInit {
 
   public errors;
   // tslint:disable-next-line:ban-types

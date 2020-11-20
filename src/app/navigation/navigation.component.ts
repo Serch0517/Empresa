@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navegacion.component.html',
-  styleUrls: ['./navegacion.component.css']
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
-export class NavegacionComponent implements OnInit {
+export class NavigationComponent implements OnInit {
 
   constructor() { }
 

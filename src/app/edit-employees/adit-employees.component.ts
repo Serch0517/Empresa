@@ -4,10 +4,10 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-editar-empleados',
-  templateUrl: './editar-empleados.component.html',
-  styleUrls: ['./editar-empleados.component.css']
+  templateUrl: './edit-employees.component.html',
+  styleUrls: ['./adit-employees.component.css']
 })
-export class EditarEmpleadosComponent implements OnInit {
+export class AditEmployeesComponent implements OnInit {
 
   public id: string;
   public errors: any;
